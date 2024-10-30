@@ -20,7 +20,7 @@ class Program
                 .Build();
             
             var logConfig = new NLog.Config.LoggingConfiguration();
-            var logFilePath = Path.Combine(Environment.CurrentDirectory, "logs.txt");
+            var logFilePath = Path.Combine(Environment.CurrentDirectory, "logs.log");
 
             var fileTarget = new NLog.Targets.FileTarget("logfile")
             {
